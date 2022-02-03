@@ -50,6 +50,9 @@ class FirstFragment : Fragment() {
 
         binding.btSecond.setOnClickListener {
             findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
+//            parentFragmentManager.beginTransaction()
+//                .add(R.id.fragment_container,SecondFragment())
+//                .commit()
         }
 
         binding.btThird.setOnClickListener {
