@@ -45,15 +45,15 @@ class FirstFragment : Fragment() {
 //            binding.tvClickJudge.text = "押された"
 //        })
 
-        val navHostFragment = activity?.supportFragmentManager?.findFragmentById(R.id.host_fragment) as NavHostFragment
+//        val navHostFragment = activity?.supportFragmentManager?.findFragmentById(R.id.host_fragment) as NavHostFragment
 
 
         binding.btSecond.setOnClickListener {
-            navHostFragment.navController.navigate(R.id.action_firstFragment_to_secondFragment)
+            findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
         }
 
         binding.btThird.setOnClickListener {
-            navHostFragment.navController.navigate(R.id.action_firstFragment_to_thirdFragment)
+            findNavController().navigate(R.id.action_firstFragment_to_thirdFragment)
         }
 
 
