@@ -11,6 +11,8 @@
         android:label="FirstFragment" >
         <action
             android:id="@+id/action_firstFragment_to_secondFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
             app:destination="@id/secondFragment" />
         <action
             android:id="@+id/action_firstFragment_to_thirdFragment"
@@ -20,7 +22,11 @@
         android:id="@+id/secondFragment"
         android:name="com.qnote.sampleapp.SecondFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second" >
+        <argument
+            android:name="strText"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/thirdFragment"
         android:name="com.qnote.sampleapp.ThirdFragment"

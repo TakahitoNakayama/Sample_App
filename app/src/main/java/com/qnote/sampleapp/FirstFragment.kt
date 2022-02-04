@@ -49,7 +49,7 @@ class FirstFragment : Fragment() {
 
 
         binding.btSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
+            findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment(strText = "受け取った"))
 //            parentFragmentManager.beginTransaction()
 //                .add(R.id.fragment_container,SecondFragment())
 //                .commit()
@@ -58,6 +58,7 @@ class FirstFragment : Fragment() {
         binding.btThird.setOnClickListener {
             findNavController().navigate(R.id.action_firstFragment_to_thirdFragment)
         }
+
 
 
     }
